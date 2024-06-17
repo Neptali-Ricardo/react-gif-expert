@@ -1,4 +1,4 @@
-import React from 'react'
+import Protypes from 'prop-types'
 
 export const GifItem = ({ title, url, id }) => {
 
@@ -9,3 +9,18 @@ export const GifItem = ({ title, url, id }) => {
     </div>
   )
 }
+
+GifItem.prototype = {
+  title: Protypes.string.isRequired,
+  url  : Protypes.string.isRequired,
+}
+
+/* Tarea 
+
+1. Añadir Protypes
+    a.  title obligatorio
+    b. url obligatorio
+
+2. Evaluar el snapshot
+
+*/
